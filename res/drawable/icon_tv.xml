@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/baseline_live_tv_grey_900_24dp" android:state_activated="true" />
+    <item android:drawable="@drawable/baseline_live_tv_white_24dp" />
+</selector>

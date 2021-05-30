@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_margin="4.0dip" app:cardBackgroundColor="@color/background_item_season" app:cardCornerRadius="4.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <ImageView android:id="@id/imgThumb" android:background="@color/background_item_calendar" android:layout_width="106.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/exo_white" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/exo_white" android:id="@id/tvYear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/exo_white" android:ellipsize="end" android:id="@id/tvDes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="6" android:layout_below="@id/tvName" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

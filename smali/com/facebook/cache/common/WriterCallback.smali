@@ -1,0 +1,12 @@
+.class public interface abstract Lcom/facebook/cache/common/WriterCallback;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract write(Ljava/io/OutputStream;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method

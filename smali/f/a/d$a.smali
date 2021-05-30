@@ -1,0 +1,81 @@
+.class synthetic Lf/a/d$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lf/a/d;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation
+
+
+# static fields
+.field static final synthetic a:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    invoke-static {}, Lf/a/j$e;->values()[Lf/a/j$e;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lf/a/d$a;->a:[I
+
+    :try_start_0
+    sget-object v1, Lf/a/j$e;->b:Lf/a/j$e;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v0, Lf/a/d$a;->a:[I
+
+    sget-object v1, Lf/a/j$e;->c:Lf/a/j$e;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v0, Lf/a/d$a;->a:[I
+
+    sget-object v1, Lf/a/j$e;->e:Lf/a/j$e;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    return-void
+.end method

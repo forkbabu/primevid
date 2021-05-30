@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvTitleDialog" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Languages subtitle" />
+    <ListView android:id="@id/lv_language" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/item_focus" android:drawSelectorOnTop="false" />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.guideplus.co" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <permission android:description="@string/permdesc_downloadManager" android:label="@string/permlab_downloadManager" android:name="com.mozillaonline.permission.guideplus.ACCESS_DOWNLOAD_MANAGER" android:protectionLevel="normal"/>
+    <permission android:description="@string/permdesc_downloadManagerAdvanced" android:label="@string/permlab_downloadManagerAdvanced" android:name="com.mozillaonline.permission.guideplus.ACCESS_DOWNLOAD_MANAGER_ADVANCED" android:protectionLevel="normal"/>
+    <permission android:description="@string/permdesc_downloadCompletedIntent" android:label="@string/permlab_downloadCompletedIntent" android:name="com.mozillaonline.permission.guideplus.SEND_DOWNLOAD_COMPLETED_INTENTS" android:protectionLevel="normal"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.mozillaonline.permission.guideplus.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="com.mozillaonline.permission.guideplus.ACCESS_DOWNLOAD_MANAGER_ADVANCED"/>
+    <uses-permission android:name="com.mozillaonline.permission.guideplus.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <queries>
+        <package android:name="com.battlelancer.seriesguide"/>
+        <package android:name="com.uwetrottmann.seriesguide.amzn"/>
+    </queries>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:maxSdkVersion="25" android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/1" android:icon="@drawable/1" android:label="Prime Video" android:largeHeap="true" android:name="com.guideplus.co.TerraApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@drawable/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:name="com.guideplus.co.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.guideplus.co.MainActivity"/>
+        <activity android:name="com.guideplus.co.SearchActivity"/>
+        <activity android:name="com.guideplus.co.DetailActivityMobile"/>
+        <activity android:name="com.guideplus.co.TrailerActivity"/>
+        <activity android:name="com.guideplus.co.DetailActivityLand"/>
+        <activity android:name="com.guideplus.co.EpisodeMobileActivity"/>
+        <activity android:name="com.guideplus.co.EpisodeLandActivity"/>
+        <activity android:name="com.guideplus.co.CalendarActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.guideplus.co.LinkActivity"/>
+        <activity android:name="com.guideplus.co.LoginAllDebridActivity"/>
+        <activity android:name="com.guideplus.co.LoginRealDebridActivity"/>
+        <activity android:name="com.guideplus.co.LoginTraktActivity"/>
+        <provider android:authorities="com.guideplus.co.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:name="com.guideplus.co.receiver.ReceiverUpdateRecent">
+            <intent-filter>
+                <action android:name="filmplus.refresh.recent"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.guideplus.co.LoginTraktLand"/>
+        <activity android:name="com.guideplus.co.SettingActivity"/>
+        <activity android:name="com.guideplus.co.FavoriteActivity"/>
+        <activity android:name="com.guideplus.co.player.ExoPlayerActivity" android:theme="@style/PlayerTheme" android:turnScreenOn="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.guideplus.co.SubtitleActivity"/>
+        <activity android:name="com.guideplus.co.FAQActivity"/>
+        <activity android:name="com.guideplus.co.LoginRealDebridMobileActivity"/>
+        <activity android:name="com.guideplus.co.download_manager.download.ui.DownloadActivity"/>
+        <service android:exported="false" android:name="com.guideplus.co.firebase_mess.MyJobService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.mozillaonline.downloads_guideplus" android:name="com.guideplus.co.download_manager.download.DownloadProvider"/>
+        <service android:name="com.guideplus.co.download_manager.download.DownloadService"/>
+        <service android:name="com.guideplus.co.service.ServiceSyncHistory"/>
+        <receiver android:exported="false" android:name="com.guideplus.co.download_manager.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:description="@string/app_name" android:label="@string/app_name" android:name="com.guideplus.co.seriesguide.ExampleExtensionReceiver">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.SeriesGuideExtension"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.guideplus.co.seriesguide.ExampleExtensionService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:description="@string/app_name" android:enabled="@bool/isNotOreoOrHigher" android:label="@string/app_name" android:name="com.guideplus.co.seriesguide.ExampleExtension">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.SeriesGuideExtension"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="pl.droidsonroids.casty.CastOptionsProvider"/>
+        <activity android:name="pl.droidsonroids.casty.ExpandedControlsActivity" android:theme="@style/Theme.CastVideosDark"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.guideplus.co.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.guideplus.co.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>

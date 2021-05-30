@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/actionbar" android:background="@color/actionbar_color" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageView android:id="@id/imgBack" android:background="@drawable/action_focus" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/round_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="Settings" android:layout_toRightOf="@id/imgBack" android:layout_centerVertical="true" android:textAllCaps="false" android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bannerContainer" android:background="@color/actionbar_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <fragment android:name="com.guideplus.co.fragment.SettingsFragment" android:id="@id/setting_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bannerContainer" android:layout_below="@id/actionbar" />
+</RelativeLayout>

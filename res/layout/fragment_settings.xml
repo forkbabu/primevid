@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorAccent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Account" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color_gray" android:id="@id/tvLoginRealDebrid" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_realdebrid" />
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvLoginToAllDebrid" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Login to AllDebrid" />
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vLoginPremiumize" android:background="@drawable/tablayout_focus" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvTitlePremiumize" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="14.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Premiumize" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvStatusPremiumize" android:paddingLeft="16.0dip" android:paddingTop="3.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_to_premiumize" android:layout_below="@id/tvTitlePremiumize" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vLoginTrakt" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvLoginTrakt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_trakt" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvNameLoginTrakt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vSynWatched" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Download watched histories now" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Download watched histories from Trakt immediately" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vSyncWatchlist" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Backup Watchlist" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvPathSync" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vRestoreWatchlist" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Restore Watchlist" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvRestorePath" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vSyncWatched" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Backup history" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvPathSyncWatched" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vRestoreWatched" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Restore history" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvRestorePathWatched" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vSyncFavorite" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Backup favorite" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvPathSyncFavorite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vRestoreFavorite" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Restore Favorite" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvRestoreFavorite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vAutoSynWhenUpdate" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbSynWhenUpdate" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Auto backup data before update." android:layout_toLeftOf="@id/cbSynWhenUpdate" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/colorAccent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="General" />
+        <RelativeLayout android:id="@id/vLanguageFilterOut" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbFilterOut" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Filter out non-English TV shows" android:layout_toLeftOf="@id/cbFilterOut" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vDefaultTab" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvDefaultTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open app default tab" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvVerifyCaptcha" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Verify captcha (Only for phone)" />
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vHideSeason" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbHideSeason" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hide unaired season" android:layout_toLeftOf="@id/cbHideSeason" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vHideEpisode" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbHideEpisode" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hide unaired episode" android:layout_toLeftOf="@id/cbHideEpisode" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vHidePoster" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbHidePoster" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hide posters" android:layout_toLeftOf="@id/cbHidePoster" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vHideTitleYear" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbHideTitleYear" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hide title and year under posters" android:layout_toLeftOf="@id/cbHideTitleYear" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vHideEpisodeThumb" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbHideEpisodeThumb" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hide episode thumbnail" android:layout_toLeftOf="@id/cbHideEpisodeThumb" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vDefaultCateTv" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Choose default TV shows category" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvDefaultCateTv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vDefaultCateMovie" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Choose default Movies category" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvDefaultCateMovie" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vChangePosterSize" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Media poster size" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvPosterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvClearSearchHistory" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Clear search history" />
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/colorAccent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Player" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vDefaultPlayer" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Choose default player" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvNameDefaultPlayer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Internal player" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vDefaultContinueAction" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Choose default continue playback option" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvDefaultContinueAction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Always ask" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vDefaultAction" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Choose default play action" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvDefaultAction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="None" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vAutoPlayNextEpisode" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbAutoPlayNextEpisode" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Autoplay next episode(TV/Show)" android:layout_toLeftOf="@id/cbAutoPlayNextEpisode" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vNumberLinkAuto" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Number of link to auto play next episode(TV/Show)" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvNumberLinkAuto" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/colorAccent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Subtitles" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vLanguage" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvLanguage" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sub_language" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvSubLanguage" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vLanguageTwo" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvLanguageTwo" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sub_language_two" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvSubLanguageTwo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vAutoPlaySub" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbAutoPlaySub" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Auto play first sub in list" android:layout_toLeftOf="@id/cbAutoPlaySub" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vSubtitleSize" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sub_size" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvSubTitleSize" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vSubtitleColor" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:layout_gravity="center_vertical" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subtitle color" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:id="@id/tvSubTitleColor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:id="@id/tvLoginOpensubtitles" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Login Opensubtitles" />
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/colorAccent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Info" />
+        <RelativeLayout android:id="@id/vAdultVideo" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbAdultVideo" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Adult" android:layout_toLeftOf="@id/cbAdultVideo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vShowhindi" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbHindi" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show Hindi" android:layout_toLeftOf="@id/cbHindi" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vRealDebrid" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbRealDebrid" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show RealDebrid only" android:layout_toLeftOf="@id/cbRealDebrid" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/vForceTV" android:background="@drawable/tablayout_focus" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/checkBoxStyle" android:id="@id/cbCheckForce" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/cbCheckForce" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color_focus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Force Landscape Mode on Android TV" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/subtext_color_focus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Notice: Only for Android TV box" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvFaq" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="FAQ" />
+        <View android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvAbout" android:background="@drawable/tablayout_focus" android:padding="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="About" />
+    </LinearLayout>
+</ScrollView>

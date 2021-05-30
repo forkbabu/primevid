@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:layout_gravity="center_horizontal" android:id="@id/grData" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:listSelector="@drawable/item_focus" android:drawSelectorOnTop="true" android:horizontalSpacing="6.0dip" android:verticalSpacing="6.0dip" android:stretchMode="columnWidth" android:numColumns="@integer/number_column_grid" />
+</RelativeLayout>
